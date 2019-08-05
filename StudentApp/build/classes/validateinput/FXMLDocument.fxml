@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeeapp.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="128.0" layoutY="176.0" onAction="#handleButtonAction" text="Submit" />
+        <Label fx:id="EmpNameOut" layoutX="135.0" layoutY="227.0" minHeight="16" minWidth="69" />
+      <TextField fx:id="EmpName" layoutX="128.0" layoutY="42.0" onAction="#handleButtonAction" />
+      <Label layoutX="48.0" layoutY="46.0" text="First Name" />
+      <RadioButton layoutX="127.0" layoutY="92.0" mnemonicParsing="false" selected="true" text="IT">
+         <toggleGroup>
+            <ToggleGroup fx:id="Department" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="197.0" layoutY="92.0" mnemonicParsing="false" text="HR" toggleGroup="$Department" />
+      <RadioButton layoutX="278.0" layoutY="92.0" mnemonicParsing="false" text="Finance" toggleGroup="$Department" />
+      <Label layoutX="50.0" layoutY="91.0" prefHeight="14.0" prefWidth="69.0" text="Department" />
+      <Label fx:id="DeptNameOut" layoutX="133.0" layoutY="253.0" prefHeight="14.0" prefWidth="69.0" />
+      <Label layoutX="36.0" layoutY="134.0" prefHeight="14.0" prefWidth="79.0" text="Employee Type" />
+      <Label fx:id="EmpTypeOut" layoutX="133.0" layoutY="279.0" prefHeight="14.0" prefWidth="96.0" />
+      <ChoiceBox fx:id="EmpType" layoutX="122.0" layoutY="130.0" prefWidth="150.0" />
+      <TextField fx:id="EmpNo" layoutX="130.0" layoutY="14.0" onAction="#handleButtonAction" />
+      <Label layoutX="37.0" layoutY="18.0" prefHeight="14.0" prefWidth="69.0" text="Employee No" />
+      <Label fx:id="EmpNoOut" layoutX="132.0" layoutY="319.0" prefHeight="14.0" prefWidth="107.0" />
+    </children>
+</AnchorPane>
